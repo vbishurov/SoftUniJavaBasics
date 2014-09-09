@@ -9,12 +9,8 @@ public class _4_TheSmallestOf3Numbers {
 		double b = scanner.nextDouble();
 		double c = scanner.nextDouble();
 		scanner.close();
-		if (a <= b && a <= c) {
-			System.out.println(a);
-		} else if (b <= a && b <= c) {
-			System.out.println(b);
-		} else if (c <= a && c <= b) {
-			System.out.println(c);
-		}
+		double temp= Math.min(a, b);
+		double smallest=Math.min(temp, c);
+		System.out.println(new Float(smallest).toString().replaceAll("\\.0", ""));
 	}
 }
