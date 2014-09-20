@@ -7,6 +7,7 @@ public static void main(String[] args) {
 	Scanner scanner=new Scanner(System.in);
 	String[] list1=scanner.nextLine().split(" ");
 	String[] list2=scanner.nextLine().split(" ");
+	scanner.close();
 	ArrayList<String> l1=new ArrayList<>();
 	ArrayList<String> l2=new ArrayList<>();
 	for (String string : list1) {

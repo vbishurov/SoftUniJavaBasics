@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class _07_CountSubstringOccurances {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		String[] input = scanner.nextLine().split("([^a-zA-z]+)");
-		String wordToLookFor = scanner.nextLine();
+		String[] input = scanner.nextLine().split("[^A-Za-z0-9_]+");
+		String wordToLookFor = scanner.nextLine().trim();
+		System.out.println(wordToLookFor);
 		int counter = 0;
 		scanner.close();
 		for (int i = 0; i < input.length; i++) {
